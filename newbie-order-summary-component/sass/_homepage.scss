@@ -1,0 +1,114 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin: auto;
+  margin-top: 10rem;
+  background: white;
+  border-radius: 1rem;
+
+  @media only screen and (max-width: $bp-desktop) {
+    margin-top: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-tablet) {
+    margin-top: 25rem;
+    width: 50%;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 70%;
+  }
+
+  &__img-1 {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.ordersummary {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  &__title {
+    color: #1f2f56;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.3rem;
+    color: gray;
+    width: 65%;
+    margin: auto;
+  }
+}
+
+.annualplan {
+  background: #f5f7ff;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+
+  &__img-2 {
+    margin-right: 2rem;
+  }
+
+  &__text {
+    margin-right: 5rem;
+    line-height: 1.8rem;
+    &--plan {
+      color: #1f2f56;
+    }
+    &--year {
+      color: gray;
+    }
+  }
+
+  &__change {
+    font-weight: bold;
+    color: #3829e0;
+
+    &:hover {
+      color: #1f2f56;
+      text-decoration: none;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__proceed {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    padding: 2rem 8rem;
+    background: #3829e0;
+    margin-bottom: 2rem;
+
+    &:hover {
+      background: #1f2f56;
+    }
+  }
+  &__cancel {
+    color: gray;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+
+    &:hover {
+      color: #1f2f56;
+    }
+  }
+}

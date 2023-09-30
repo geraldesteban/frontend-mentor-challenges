@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  background: url(/images/pattern-background-desktop.svg) no-repeat, #f5f7ff;
+  background-size: contain;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin: auto;
+  margin-top: 10rem;
+  background: white;
+  border-radius: 1rem;
+}
+@media only screen and (max-width: 120em) {
+  .card {
+    margin-top: 10rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .card {
+    margin-top: 25rem;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .card {
+    width: 70%;
+  }
+}
+.card__img-1 {
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.ordersummary {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ordersummary__title {
+  color: #1f2f56;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.ordersummary__description {
+  font-size: 1.3rem;
+  color: gray;
+  width: 65%;
+  margin: auto;
+}
+
+.annualplan {
+  background: #f5f7ff;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.annualplan__img-2 {
+  margin-right: 2rem;
+}
+.annualplan__text {
+  margin-right: 5rem;
+  line-height: 1.8rem;
+}
+.annualplan__text--plan {
+  color: #1f2f56;
+}
+.annualplan__text--year {
+  color: gray;
+}
+.annualplan__change {
+  font-weight: bold;
+  color: #3829e0;
+}
+.annualplan__change:hover {
+  color: #1f2f56;
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.btn__proceed {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  padding: 2rem 8rem;
+  background: #3829e0;
+  margin-bottom: 2rem;
+}
+.btn__proceed:hover {
+  background: #1f2f56;
+}
+.btn__cancel {
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+.btn__cancel:hover {
+  color: #1f2f56;
+}
+
+/*# sourceMappingURL=style.css.map */
