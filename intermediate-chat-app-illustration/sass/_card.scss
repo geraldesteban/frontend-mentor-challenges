@@ -1,0 +1,288 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-wrap: wrap;
+        margin-left: 0rem;
+    }
+}
+
+.card {
+    position: relative;
+    top: 7rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5rem;
+    padding: 2rem;
+    width: 40rem;
+    height: 78rem;
+
+    &__color {
+        border-radius: 5rem;
+        background: hsl(270, 20%, 96%);
+    }
+
+    &__one {
+        background: linear-gradient(180deg, rgba(255,128,255,1) 0%, rgba(148,0,211,1) 100%);
+        padding: 0rem 1rem 2.5rem 1rem;
+        border-radius: 4rem 4rem 1rem 1rem;
+        clip-path: ellipse(50%);
+
+        &--cut {
+            width: 15rem;
+            height: 2.5rem;
+            background: white;
+            border-radius: 0rem 0rem 2rem 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & i {
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        &--flex {
+            display: flex;
+            align-items: center;
+
+            &--text {
+                font-family: 'Rubik', sans-serif;
+                font-size: 1.2rem;
+                line-height: 1.5;
+
+                &--name {
+                    color: white;
+                }
+
+                &--description {
+                    color: hsl(270, 20%, 96%);
+                }
+            }
+        }
+
+        &--image {
+            border-radius: 10rem;
+            border: 0.2rem solid white;
+            width: 5rem;
+            margin-left: 1.5rem;
+            margin: 0rem 1.5rem;
+        }
+    }
+
+    &__chat {
+        padding: 2rem;
+
+        &--text {
+            
+            &--description {
+                font-size: 1.3rem;
+                font-weight: 500;
+                font-family: 'Rubik', sans-serif;
+                background: hsl(206, 6%, 79%);
+                color: hsl(276, 55%, 52%);
+                width: 17rem;
+                height: 5rem;
+                border-radius: 1rem;
+                margin-bottom: 1rem;
+                padding: 1rem;
+
+                &:nth-child(1) {
+                    width: 20rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        &--two {
+            display: flex;
+            justify-content: flex-end;
+            
+            &--image {
+                border-radius: 2rem;
+                width: 6rem;
+                margin: 0rem 0.5rem;
+            }
+        }
+
+        &--three {
+            padding: 2rem;
+
+            &--text {
+            
+                &--description {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    font-family: 'Rubik', sans-serif;
+                    background: hsl(0, 0%, 100%);
+                    color: hsl(270, 7%, 64%);
+                    width: 21rem;
+                    height: 5rem;
+                    border-radius: 1rem;
+                    margin-left: 8rem;
+                    margin-bottom: 1rem;
+                    padding: 1rem;
+
+                    &--cut {
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        font-family: 'Rubik', sans-serif;
+                        background: hsl(0, 0%, 100%);
+                        color: hsl(270, 7%, 64%);
+                        width: 13rem;
+                        height: 3.5rem;
+                        border-radius: 1rem;
+                        margin-left: 16rem;
+                        margin-bottom: 1rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__text {
+        position: relative;
+        font-family: 'Rubik', sans-serif;
+        margin-top: 15rem;
+        margin-left: 10rem;
+
+        @media only screen and (max-width: $bp-medium) {
+           text-align: center;
+           margin-left: 0rem;
+        }
+
+        &--title {
+            color: hsl(271, 36%, 24%);
+            font-size: 5rem;
+            margin-bottom: 3rem;
+        }
+
+        &--description {
+            color: hsl(270, 7%, 64%);
+            font-size: 2rem;
+            width: 56rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                text-align: center;
+                width: 38rem;
+             }
+        }
+    }
+
+    &__texttwo {
+
+        &--description {
+            font-size: 1.3rem;
+            font-weight: 500;
+            font-family: 'Rubik', sans-serif;
+            background: hsl(206, 6%, 79%);
+            color: hsl(276, 55%, 52%);
+            width: 17rem;
+            height: 8rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+
+    }
+
+    &__walk {
+        background: linear-gradient(180deg, rgba(255,128,255,1) 0%, rgba(148,0,211,1) 100%);
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        width: 25rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+
+        &--text {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Rubik', sans-serif;
+            color: white;
+
+            &--circle {
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 1rem;
+                border: 1px solid white;
+            }
+
+            &--description {
+                font-size: 1.4rem;
+                margin-right: 5rem;
+            }
+        }
+    }
+
+    &__walktwo {
+        background: linear-gradient(180deg, rgba(255,128,255,1) 0%, rgba(148,0,211,1) 100%);
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        width: 25rem;
+        height: 4rem;
+
+        &--text {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Rubik', sans-serif;
+            color: white;
+
+            &--circle {
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 1rem;
+                border: 1px solid white;
+            }
+
+            &--description {
+                font-size: 1.4rem;
+                margin-right: 5rem;
+            }
+        }
+    }
+
+    &__message {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        border-radius: 1rem;
+        height: 5rem;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+
+        & input {
+            border: none;
+            outline: none;
+        }
+
+        &--button  {
+            border: none;
+            background: hsl(271, 36%, 24%);
+            border-radius: 10rem;
+            height: 3.5rem;
+            width: 3.5rem;
+            cursor: pointer;
+
+            & i {
+                font-size: 2.5rem;
+                color: white;
+                margin-left: 0.3rem;
+            }
+        }
+    }
+}

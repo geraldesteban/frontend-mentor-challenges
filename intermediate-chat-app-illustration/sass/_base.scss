@@ -1,0 +1,80 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 25.000em; // 400px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16 = 62.5% -> 1rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 62.5%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 45%;
+    }
+}
+
+.circle {
+    position: relative;
+    &__1 {
+        position: absolute;
+        left: -10rem;
+        height: 85rem;
+        width: 70rem;
+        background: linear-gradient(180deg, rgba(255,128,255,1) 0%, rgba(148,0,211,1) 100%);
+        border-bottom-right-radius: 50rem;
+        border-bottom-left-radius: 50rem;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 50rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 40rem;
+        }
+    }
+
+    &__2 {
+        position: absolute;
+        top: 10rem;
+        right: 0rem;
+        height: 83.7rem;
+        width: 50rem;
+        background: hsl(270, 20%, 96%);
+        border-top-left-radius: 45rem;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 30rem;
+            height: 101rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 115rem;
+        }
+    }
+}
+
