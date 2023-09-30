@@ -1,0 +1,86 @@
+.vehicle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+    border-radius: 10px;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: 100px auto;
+        width: 300px;
+
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+
+
+    // CARD COLUMN
+    &__1 {
+        background-color: #E28625;
+        border-radius: 10px;
+
+        width: 300px;
+        height: 500px;
+
+        position: relative;
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 400px;
+        }
+    }
+
+    &__2 {
+        background-color: #006971;
+        border-radius: 10px;
+
+        width: 300px;
+        height: 500px;
+        
+        position: relative;
+        right: 15px;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 400px;
+
+            right: 0;
+            bottom: 15px;
+        }
+    }
+
+    &__3 {
+        background-color: #004140; 
+        border-radius: 10px;
+
+        width: 300px;
+        height: 500px;
+
+        position: relative;
+        right: 30px;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 400px;
+
+            right: 0;
+            bottom: 30px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 60px;
+        left: 40px;
+
+        @media only screen and (max-width: $bp-medium) {
+            top: 30px;
+        }
+    }
+}

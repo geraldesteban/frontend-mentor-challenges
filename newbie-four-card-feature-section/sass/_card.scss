@@ -1,0 +1,122 @@
+.cards {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 1300px;
+
+    @media only screen and (max-width: $bp-large) {
+        width: 1000px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 600px;
+    }
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    
+    color: #4D4F62;
+    font-family: 'Poppins', sans-serif;
+
+    position: relative;
+
+    &__1 {
+        background-color: #fff;
+        border-radius: 10px;
+        border-top: solid 5px #44D3D2;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .3);
+
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+        margin-bottom: 20px;
+    
+        position: relative;
+        top: 140;
+        left: 60;
+
+        @media only screen and (max-width: $bp-larger) {
+            left: 0;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            top: 0;
+        }
+    }
+    
+    &__2 {
+        background-color: #fff;
+        border-radius: 10px;
+        border-top: solid 5px #549EF2;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .3);
+
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        position: relative;
+        top: 140;
+        right: 60;
+
+        @media only screen and (max-width: $bp-larger) {
+            right: 0;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            top: 0;
+        }
+    }
+
+    &__3 {
+        background-color: #fff;
+        border-radius: 10px;
+        border-top: solid 5px #EA5454;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .3);
+
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        position: relative;
+    }
+    
+    &__4 {
+        background-color: #fff;
+        border-radius: 10px;
+        border-top: solid 5px #FCAE4A;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .3);
+        
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+        margin-bottom: 20px;
+        
+        position: relative;
+        top: 30;
+
+        @media only screen and (max-width: $bp-large) {
+            top: 0;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+    }
+
+    &__description {
+        font-size: 13px;
+        width: 250px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 150;
+        left: 250;
+    }
+}

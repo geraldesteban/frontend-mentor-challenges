@@ -1,0 +1,92 @@
+.cards {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media only screen and (max-width: $bp-larger) {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 80%;
+    }
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    @media only screen and (max-width: $bp-large) {
+        flex-wrap: wrap;
+    }
+
+    &__1 {
+        background-color: #512051;
+        border-radius: 10px;
+        margin: 0 20px;
+        width: 360px;
+        height: 100%;
+        padding: 30px;
+
+        &:nth-child(2) {
+            margin-top: 20px;
+
+            @media only screen and (max-width: $bp-large) {
+                margin-top: 10px;
+            }
+        }
+
+        &:nth-child(3) {
+            margin-top: 40px;
+
+            @media only screen and (max-width: $bp-large) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        font-family: 'Spartan', sans-serif;
+        font-size: 9px;
+        margin-bottom: 25px;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 8px;
+        }
+    }
+
+    &__picture {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    &__flex {
+        margin-left: 20px;
+        color: #FFFFFF;
+        line-height: 1.5;
+    }
+
+    &__buyer {
+        color: #EE69A4;
+    }
+
+    &__descrip {
+        color: #FFFFFF;
+        font-family: 'Spartan', sans-serif;
+        font-size: 13px;
+        line-height: 1.9;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 8px;
+        }
+    }
+}

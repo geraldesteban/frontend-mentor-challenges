@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+
+    @media only screen and (max-width: $bp-mediumone) {
+        justify-content: space-around;
+        padding: 5rem 0rem;
+    }
+
+    @media only screen and (max-width: $bp-mediumfour) {
+        padding: 10rem 0rem;
+    }
+
+    &__img {
+
+        @media only screen and (max-width: $bp-mediumfour) {
+            width: 30rem;
+        }
+    }
+
+    &__link {
+        color: hsl(322, 100%, 66%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding: 1rem 5rem;
+        text-decoration: none;
+        border: 2px solid hsl(322, 100%, 66%);
+        border-radius: 3rem;
+
+        @media only screen and (max-width: $bp-mediumfour) {
+            font-size: 4rem;
+            border-radius: 4rem;
+            border: 1px solid hsl(322, 100%, 66%);
+        }
+
+        &:hover {
+            color: white;
+            background: hsl(322, 100%, 66%);
+        }
+    }
+}

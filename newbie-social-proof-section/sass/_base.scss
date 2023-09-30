@@ -1,0 +1,18 @@
+// MEDIA QUERY
+$bp-smallest: 25em; // 400/16em = 25em 400px
+$bp-smaller: 37.5em; // 600/16em = 37.5em 600px
+$bp-small: 43.75em; // 700/16em = 43.75em 700px
+$bp-medium: 56.25em; // 900/16em = 56.25em 900px
+$bp-large: 87.5em; // 1400/16em = 87.5em 1400px
+$bp-larger: 106.25em; // 1700/16em = 106.25em 1700px
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}

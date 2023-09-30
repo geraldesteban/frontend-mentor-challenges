@@ -1,0 +1,135 @@
+.container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-large) {
+        width: 700px;
+    }
+}
+
+.community {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 800px;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    padding-left: 40px;
+    padding-right: 170px;
+    
+    @media only screen and (max-width: $bp-large) {
+        width: 400px;
+        padding-right: 40px;
+    }
+
+    &__title {
+        color: #2AB3B1;
+        font-family: 'Karla', sans-serif;
+        font-size: 24px;
+        margin-bottom: 20px;
+
+        &--2 {
+            color: #C0DF33;
+            font-family: 'Karla', sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__description {
+        color: #9AA7BE;
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+    }
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+
+    @media only screen and (max-width: $bp-large) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__2 {
+        background-color: #2AB3B1;
+        width: 400px;
+        padding: 50px;
+    }
+
+    &__title {
+        color: #fff;
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__monthly {
+        font-family: 'Karla', sans-serif;
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        &--price {
+            color: #fff;
+            font-size: 32px;
+        }
+
+        &--month {
+            color: #fff;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+    }
+
+    &__description {
+        color: #fff;
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        color: #fff;
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        padding: 20px 40px;
+        width: 100%;
+        background-color: #C0DF33;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .10);
+    }
+
+    &__3 {
+        background-color: green;
+        width: 400px;
+        color: #fff;
+        font-family: 'Karla', sans-serif;
+        padding: 50px;
+        padding-left: 50px;
+        padding-right: 150px;
+        line-height: 1.7;
+
+        & h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        & p {
+            font-size: 14px;
+        }
+    }
+}
+

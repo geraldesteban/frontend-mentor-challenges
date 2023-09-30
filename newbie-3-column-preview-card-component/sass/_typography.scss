@@ -1,0 +1,32 @@
+.vehicle__title {
+    color: #F2F2F2;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+
+    position: absolute;
+    left: 40px;
+    top: 140px;
+
+    @media only screen and (max-width: $bp-medium) {
+        top: 90px;
+    }
+}
+
+.vehicle__description {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8;
+
+    width: 211px;
+
+    position: absolute;
+    left: 40px;
+    bottom: 160px;
+
+    @media only screen and (max-width: $bp-medium) {
+        bottom: 100px;
+        width: 224px;
+    }
+}

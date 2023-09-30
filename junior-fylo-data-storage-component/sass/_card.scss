@@ -1,0 +1,169 @@
+.card {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        margin-top: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        margin-top: 45rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-wrap: wrap;
+        margin-top: 18rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin-top: 23rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin-top: 40rem;
+    }
+
+    &__one {
+        background: hsl(228, 56%, 26%);
+        border-radius: 1rem 10rem 1rem 1rem;
+        padding: 7rem 20rem 3rem 3rem;
+
+        &--image {
+            margin-bottom: 3rem;
+            margin-left: 1.5rem;
+            width: 20rem;
+            height: 5rem;
+        }
+
+        &--files {
+            display: flex;
+
+            &--li {
+                list-style-type: none;
+                padding: 1.5rem 2rem;
+                background: hsl(229, 57%, 11%);
+                border-radius: 1rem;
+                margin: 0rem 1rem;
+
+
+                &--link {
+                    &--img {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__two {
+        background: hsl(228, 56%, 26%);
+        border-radius: 1rem;
+        width: 65rem;
+        height: 15rem;
+        position: relative;
+        margin-top: 15rem;
+        margin-left: 5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-top: 5rem;
+            width: 54rem;
+            margin-left: 0rem;
+        }
+
+        &--gb {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 13rem;
+            left: 45rem;
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem 0rem 2rem 1rem;
+            width: 14rem;
+            font-family: 'Raleway', sans-serif;
+
+            @media only screen and (max-width: $bp-medium) {
+                top: 13rem;
+                left: 20rem;
+                padding: 3rem 0rem 3rem 1rem;
+            }
+
+            &--left {
+                font-size: 3rem;
+            }
+
+            &--description {
+                color: hsl(229, 7%, 55%);
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-left: 1rem;
+            }
+        }
+
+        &--text {
+            font-family: 'Raleway', sans-serif;
+            margin: 5rem 0rem 0rem 5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                text-align: center;
+                margin: 5rem 0rem 0rem 0rem;
+            }
+
+            &--description {
+                font-size: 1.5rem;
+                color: white;
+
+                @media only screen and (max-width: $bp-medium) {
+                    font-size: 2rem;
+                }
+
+                & span {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &--oblong {
+            height: 1.5rem;
+            width: 55rem;
+            border-radius: 1rem;
+            background: hsl(229, 57%, 11%);
+            margin: 1rem 0rem 0rem 5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 40rem;
+            }
+
+            &--one {
+                height: 1.5rem;
+                width: 35rem;
+                border-radius: 1rem;
+                background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+                &--circle {
+                    height: 1.4rem;
+                    width: 1.4rem;
+                    border-radius: 1rem;
+                    margin-left: 33.3rem;
+                    background: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &--flex {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 5rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            color: white;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin: 1rem 9rem 0rem 5rem;
+            }
+        }
+    }
+}

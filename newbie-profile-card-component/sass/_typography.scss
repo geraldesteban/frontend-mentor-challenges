@@ -1,0 +1,28 @@
+.circle {
+    
+    &__description {
+    color: #2E3349;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    }
+
+    &__age {
+        color: #6B7082;
+
+        position: relative;
+        top: 1;
+        left: 10;
+    }
+
+    &__address {
+        color: #6B7082;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

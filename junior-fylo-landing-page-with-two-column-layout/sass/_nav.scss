@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+
+    @media only screen and (max-width: $bp-mediumone) {
+        padding: 10rem 10rem;
+    }
+
+    &__three {
+        display: flex;
+
+        &--li {
+            list-style-type: none;
+
+            &--link {
+                font-family: 'Raleway', sans-serif;
+                font-size: 2rem;
+                font-weight: 600;
+                color: hsl(243, 87%, 12%);
+                text-decoration: none;
+                margin: 0rem 3rem;
+
+                @media only screen and (max-width: $bp-mediumone) {
+                    font-size: 5rem;
+                }
+
+                &:hover {
+                    color: hsl(238, 22%, 44%);
+                }
+            }
+        }
+    }
+}

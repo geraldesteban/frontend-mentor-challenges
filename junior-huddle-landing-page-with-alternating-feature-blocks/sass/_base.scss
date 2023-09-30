@@ -1,0 +1,74 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largestone: 101.875em; // 1630px
+$bp-largesttwo: 96.875em; // 1550px
+$bp-largestthree: 81.250em; // 1300px
+$bp-largestfour: 75.000em; // 1200px
+$bp-largestfive: 62.500em; // 1000px
+$bp-mediumone: 56.250em; // 900px
+$bp-mediumtwo: 50.000em; // 800px
+$bp-mediumthree: 45.000em; // 700px
+$bp-mediumfour: 40.625em; // 650px
+$bp-mediumfive: 35.000em; // 560px
+$bp-mediumsix: 31.250em; // 500px
+$bp-small: 25.000em; // 400px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16 = 62.5% -> 1rem = 10px
+
+    @media only screen and (max-width: $bp-largestone) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-largesttwo) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-largestthree) {
+        font-size: 40%;
+    }
+
+    @media only screen and (max-width: $bp-largestfour) {
+        font-size: 35%;
+    }
+
+    @media only screen and (max-width: $bp-largestfive) {
+        font-size: 30%;
+    }
+
+    @media only screen and (max-width: $bp-mediumone) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-mediumtwo) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-mediumthree) {
+        font-size: 40%;
+    }
+
+    @media only screen and (max-width: $bp-mediumfour) {
+        font-size: 35%;
+    }
+
+    @media only screen and (max-width: $bp-mediumfive) {
+        font-size: 30%;
+    }
+
+    @media only screen and (max-width: $bp-mediumsix) {
+        font-size: 25%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 20%;
+    }
+}

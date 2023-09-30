@@ -1,0 +1,110 @@
+.secone {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 1.8rem;
+  background: url(/images/bg-intro-desktop.svg) hsl(0, 0%, 98%) no-repeat;
+  background-position: 200% 115%;
+  background-size: 80% 130%;
+  padding: 0rem 10rem;
+  overflow: hidden;
+  animation: myNavToptoBottom 1s;
+
+  @media only screen and (max-width: $bp-tablet) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background: url(/images/bg-intro-mobile.svg) no-repeat;
+    background-size: 100%;
+  }
+
+  &__about {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10rem;
+    margin-bottom: 40rem;
+    animation: myNavRightToLeft 1s;
+    position: relative;
+
+    @media only screen and (max-width: $bp-tablet) {
+      text-align: center;
+      width: 50rem;
+      margin-bottom: 0rem;
+    }
+
+    @media only screen and (max-width: $bp-desktop) {
+      margin-bottom: 0rem;
+    }
+
+    @keyframes myNavRightToLeft {
+      0% {
+        right: 8rem;
+        opacity: 0;
+      }
+      100% {
+        right: 0rem;
+        opacity: 1;
+      }
+    }
+
+    &--title {
+      font-size: 6rem;
+      font-weight: lighter;
+      color: hsl(233, 26%, 24%);
+      margin-bottom: 3rem;
+
+      @media only screen and (max-width: $bp-desktop) {
+        width: 150%;
+      }
+
+      @media only screen and (max-width: $bp-tablet) {
+        width: 100%;
+      }
+    }
+
+    &--description {
+      font-size: 2rem;
+      color: hsl(233, 8%, 62%);
+      margin-bottom: 3rem;
+    }
+
+    &--btn {
+      font-weight: 700;
+      color: white;
+      background: linear-gradient(
+        to right,
+        hsl(136, 65%, 51%),
+        hsl(192, 70%, 51%)
+      );
+
+      padding: 2rem 5rem;
+      border: none;
+      border-radius: 10rem;
+      cursor: pointer;
+
+      @media only screen and (max-width: $bp-tablet) {
+        margin-bottom: 5rem;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    position: relative;
+    left: 10rem;
+    object-fit: cover;
+    object-position: 10rem -12rem;
+    animation: myNavToptoBottom 1s;
+    position: relative;
+
+    @media only screen and (max-width: $bp-tablet) {
+      margin-top: 10rem;
+      object-position: 0rem 0rem;
+      left: 0rem;
+    }
+  }
+}

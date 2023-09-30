@@ -1,0 +1,49 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largestone: 101.125em;// 1620px
+$bp-largesttwo: 93.750em; // 1550px
+$bp-largestthree: 84.375em; // 1350px
+$bp-largestfour: 68.750em; // 1100px
+$bp-largestfive: 62.500em; // 1000px
+$bp-mediumone: 56.250em; // 900px
+$bp-mediumtwo: 50.000em; // 800px
+$bp-mediumthree: 31.250em; // 500px
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16 = 62.5% -> 1rem = 10px
+
+    @media only screen and (max-width: $bp-largestone) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-largesttwo) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-largestthree) {
+        font-size: 40%;
+    }
+
+    @media only screen and (max-width: $bp-largestfour) {
+        font-size: 35%;
+    }
+
+    @media only screen and (max-width: $bp-largestfive) {
+        font-size: 30%;
+    }
+
+    @media only screen and (max-width: $bp-mediumtwo) {
+        font-size: 20%;
+    }
+
+    @media only screen and (max-width: $bp-mediumthree) {
+        font-size: 13%;
+    }
+}

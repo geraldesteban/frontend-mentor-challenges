@@ -1,0 +1,79 @@
+.sectwo {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 10rem;
+  background: hsl(220, 16%, 96%);
+
+  &__about {
+    font-family: Arial, Helvetica, sans-serif;
+
+    @media only screen and (max-width: $bp-desktop) {
+      text-align: center;
+    }
+    &--title {
+      color: hsl(233, 26%, 24%);
+      font-weight: lighter;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    &--description {
+      font-size: 2rem;
+      color: hsl(233, 8%, 62%);
+      margin-bottom: 4rem;
+      width: 80rem;
+
+      @media only screen and (max-width: $bp-desktop) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+
+    @media only screen and (max-width: $bp-desktop) {
+      flex-wrap: wrap;
+    }
+
+    &__features {
+      margin: 0rem 1rem;
+      width: 50rem;
+      font-family: Arial, Helvetica, sans-serif;
+
+      @media only screen and (max-width: $bp-desktop) {
+        margin: 1rem 0rem;
+      }
+
+      &--img {
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-desktop) {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      &--title {
+        font-size: 3rem;
+        font-weight: lighter;
+        color: hsl(233, 26%, 24%);
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-desktop) {
+          text-align: center;
+        }
+      }
+
+      &--description {
+        color: hsl(233, 8%, 62%);
+        font-size: 2rem;
+
+        @media only screen and (max-width: $bp-desktop) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

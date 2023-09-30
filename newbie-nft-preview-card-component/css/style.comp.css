@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background: #0d192b; }
+
+.card {
+  background: #14253d;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem; }
+  .card__image {
+    background: url(/images/image-equilibrium.jpg) center no-repeat;
+    background-size: 35rem;
+    height: 35rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-bottom: 2rem;
+    cursor: pointer; }
+    .card__image:active {
+      background: linear-gradient(90deg, rgba(0, 255, 255, 0.5) 0%, rgba(0, 255, 255, 0.5) 35%, #00d4ff 100%), url(/images/image-equilibrium.jpg) center;
+      background-size: 35rem; }
+    .card__image--view {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      padding: 15rem;
+      border-radius: 1rem;
+      opacity: 0;
+      cursor: pointer; }
+      .card__image--view:active {
+        opacity: 1; }
+  .card__text--title {
+    width: 16rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.9rem;
+    color: white;
+    margin-bottom: 2rem;
+    cursor: pointer; }
+    .card__text--title:active {
+      color: #00fff7; }
+  .card__text--description {
+    width: 35rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #2f415b;
+    margin-bottom: 2rem; }
+  .card__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+    .card__flex--eth {
+      display: flex;
+      align-items: center; }
+      .card__flex--eth--text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 1.7rem;
+        margin-left: 0.5rem;
+        color: #00fff7; }
+    .card__flex--days {
+      display: flex;
+      align-items: center; }
+      .card__flex--days--text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 1.7rem;
+        margin-left: 0.5rem;
+        color: #2f415b; }
+  .card__line {
+    border: none;
+    border-top: 0.2rem solid #2f415b;
+    margin-bottom: 2rem; }
+  .card__profile {
+    display: flex;
+    align-items: center; }
+    .card__profile--image {
+      border: white 2px solid;
+      border-radius: 50%;
+      width: 8rem; }
+    .card__profile--text {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 1.7rem;
+      color: #2f415b;
+      margin-left: 1rem; }
+      .card__profile--text span {
+        color: white;
+        cursor: pointer; }
+        .card__profile--text span:active {
+          color: #00fff7; }

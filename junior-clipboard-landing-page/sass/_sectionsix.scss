@@ -1,0 +1,68 @@
+.sectionsix {
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__image {
+        width: 7rem;
+        margin-left: 22rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-left: 0rem;
+            margin-bottom: 3rem;
+        }
+
+    }
+
+    &__flex {
+        font-family: 'Bai Jamjuree', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-right: 50rem;
+
+        @media only screen and (max-width: $bp-mostlargest) {
+            margin-right: 40rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            text-align: center;
+            flex-direction: column;
+            margin-right: 0rem;
+        }
+
+        &--one {
+            margin: 0rem 5rem;
+
+            & a{
+                font-family: 'Bai Jamjuree', sans-serif;
+                color: hsl(210, 10%, 33%);
+                font-size: 1.2rem;
+                text-decoration: none;
+                line-height: 2;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        margin-right: 15rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-right: 0rem;
+            margin-top: 3rem;
+        }
+
+        &--image {
+            margin: 0rem 1.5rem;
+            cursor: pointer;
+
+        }
+    }
+}

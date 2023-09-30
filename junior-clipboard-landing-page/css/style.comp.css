@@ -1,0 +1,393 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 101.813em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 35%; } }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 43.75em) {
+    html {
+      font-size: 55%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 35%; } }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 30%; } }
+
+body {
+  background: url(/images/bg-header-desktop.png) no-repeat;
+  background-size: contain; }
+
+.sectionone {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 0rem 15rem 0rem; }
+  .sectionone__image {
+    margin-bottom: 5rem; }
+  .sectionone__text {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center; }
+    .sectionone__text--title {
+      font-size: 5.5rem;
+      color: #4c545d;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionone__text--title {
+          margin-left: auto;
+          margin-right: auto;
+          width: 55rem; } }
+    .sectionone__text--description {
+      color: #9fabb2;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 1.5;
+      width: 90rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionone__text--description {
+          width: 48rem; } }
+  .sectionone__button {
+    display: flex; }
+    @media only screen and (max-width: 50em) {
+      .sectionone__button {
+        flex-direction: column; } }
+    .sectionone__button--1 {
+      background: none;
+      border: solid 0.3rem #26baa4;
+      border-radius: 5rem;
+      padding: 2.5rem 5.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #26baa4;
+      cursor: pointer;
+      margin-right: 1rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionone__button--1 {
+          margin-right: 0rem; } }
+      .sectionone__button--1:hover {
+        background: #26baa4;
+        color: white; }
+    .sectionone__button--2 {
+      background: none;
+      border: solid 0.3rem #6173ff;
+      border-radius: 5rem;
+      padding: 2.5rem 5.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #6173ff;
+      cursor: pointer;
+      margin-left: 1rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionone__button--2 {
+          margin-left: 0rem; } }
+      .sectionone__button--2:hover {
+        background: #6173ff;
+        color: white; }
+
+.sectiontwo {
+  margin-bottom: 15rem; }
+  .sectiontwo__text {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center; }
+    .sectiontwo__text--title {
+      font-size: 5.5rem;
+      color: #4c545d;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 50em) {
+        .sectiontwo__text--title {
+          margin-left: auto;
+          margin-right: auto;
+          width: 55rem; } }
+    .sectiontwo__text--description {
+      color: #9fabb2;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 1.5;
+      width: 95rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 8rem; }
+      @media only screen and (max-width: 50em) {
+        .sectiontwo__text--description {
+          width: 48rem; } }
+  .sectiontwo__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 50em) {
+      .sectiontwo__flex {
+        flex-wrap: wrap; } }
+    .sectiontwo__flex--image {
+      margin-right: 4.5rem;
+      width: 80rem; }
+      @media only screen and (max-width: 50em) {
+        .sectiontwo__flex--image {
+          width: 50rem;
+          margin-right: 0rem;
+          margin-bottom: 10rem; } }
+    .sectiontwo__flex--center {
+      margin-left: 4.5rem; }
+      .sectiontwo__flex--center--text {
+        font-family: 'Bai Jamjuree', sans-serif;
+        line-height: 1.5; }
+        @media only screen and (max-width: 50em) {
+          .sectiontwo__flex--center--text {
+            text-align: center; } }
+        .sectiontwo__flex--center--text--title {
+          color: #4c545d;
+          font-size: 2.3rem; }
+        .sectiontwo__flex--center--text--description {
+          color: #9fabb2;
+          font-size: 2rem;
+          width: 44rem;
+          margin-bottom: 8rem; }
+          @media only screen and (max-width: 50em) {
+            .sectiontwo__flex--center--text--description {
+              width: 38rem; } }
+
+.sectionthree {
+  margin-bottom: 5rem; }
+  .sectionthree__text {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center; }
+    .sectionthree__text--title {
+      font-size: 5.5rem;
+      color: #4c545d;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionthree__text--title {
+          margin-left: auto;
+          margin-right: auto;
+          width: 70rem; } }
+    .sectionthree__text--description {
+      color: #9fabb2;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 1.5;
+      width: 90rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionthree__text--description {
+          width: 50rem; } }
+  .sectionthree__image {
+    width: 100rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (max-width: 50em) {
+      .sectionthree__image {
+        width: 70rem; } }
+
+.sectionfour__text {
+  font-family: 'Bai Jamjuree', sans-serif;
+  text-align: center; }
+  .sectionfour__text--title {
+    font-size: 5.5rem;
+    color: #4c545d;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .sectionfour__text--title {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70rem; } }
+  .sectionfour__text--description {
+    color: #9fabb2;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 50em) {
+      .sectionfour__text--description {
+        width: 50rem; } }
+
+.sectionfour__flexone {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 15rem; }
+  @media only screen and (max-width: 50em) {
+    .sectionfour__flexone {
+      flex-wrap: wrap; } }
+  .sectionfour__flexone--tools {
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0rem 3rem; }
+    .sectionfour__flexone--tools--image {
+      margin-bottom: 4rem; }
+      .sectionfour__flexone--tools--image--btm {
+        margin-bottom: 3rem; }
+    .sectionfour__flexone--tools--title {
+      color: #4c545d;
+      font-size: 2.3rem;
+      margin-bottom: 2rem; }
+    .sectionfour__flexone--tools--description {
+      color: #9fabb2;
+      font-size: 2rem;
+      line-height: 1.5;
+      width: 43rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionfour__flexone--tools--description {
+          width: 40rem;
+          margin-bottom: 5rem; } }
+
+.sectionfour__flextwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rem; }
+  @media only screen and (max-width: 50em) {
+    .sectionfour__flextwo {
+      flex-direction: column;
+      flex-wrap: wrap; } }
+  .sectionfour__flextwo--image {
+    margin: 0rem 5rem; }
+    @media only screen and (max-width: 50em) {
+      .sectionfour__flextwo--image {
+        margin: 5rem 0rem; } }
+    .sectionfour__flextwo--image--size {
+      width: 20rem; }
+
+.sectionfive {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem 0rem 15rem 0rem; }
+  .sectionfive__text {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center; }
+    .sectionfive__text--title {
+      font-size: 5.5rem;
+      color: #4c545d;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionfive__text--title {
+          margin-left: auto;
+          margin-right: auto;
+          width: 60rem; } }
+    .sectionfive__text--description {
+      color: #9fabb2;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 1.5;
+      width: 90rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionfive__text--description {
+          width: 45rem; } }
+  .sectionfive__button {
+    display: flex; }
+    @media only screen and (max-width: 50em) {
+      .sectionfive__button {
+        flex-direction: column; } }
+    .sectionfive__button--1 {
+      background: none;
+      border: solid 0.3rem #26baa4;
+      border-radius: 5rem;
+      padding: 2.5rem 5.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #26baa4;
+      cursor: pointer;
+      margin-right: 1rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionfive__button--1 {
+          margin-right: 0rem; } }
+      .sectionfive__button--1:hover {
+        background: #26baa4;
+        color: white; }
+    .sectionfive__button--2 {
+      background: none;
+      border: solid 0.3rem #6173ff;
+      border-radius: 5rem;
+      padding: 2.5rem 5.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #6173ff;
+      cursor: pointer;
+      margin-left: 1rem; }
+      @media only screen and (max-width: 50em) {
+        .sectionfive__button--2 {
+          margin-left: 0rem; } }
+      .sectionfive__button--2:hover {
+        background: #6173ff;
+        color: white; }
+
+.sectionsix {
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 0rem; }
+  @media only screen and (max-width: 50em) {
+    .sectionsix {
+      flex-direction: column;
+      flex-wrap: wrap; } }
+  .sectionsix__image {
+    width: 7rem;
+    margin-left: 22rem; }
+    @media only screen and (max-width: 50em) {
+      .sectionsix__image {
+        margin-left: 0rem;
+        margin-bottom: 3rem; } }
+  .sectionsix__flex {
+    font-family: 'Bai Jamjuree', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-right: 50rem; }
+    @media only screen and (max-width: 101.813em) {
+      .sectionsix__flex {
+        margin-right: 40rem; } }
+    @media only screen and (max-width: 50em) {
+      .sectionsix__flex {
+        text-align: center;
+        flex-direction: column;
+        margin-right: 0rem; } }
+    .sectionsix__flex--one {
+      margin: 0rem 5rem; }
+      .sectionsix__flex--one a {
+        font-family: 'Bai Jamjuree', sans-serif;
+        color: #4c545d;
+        font-size: 1.2rem;
+        text-decoration: none;
+        line-height: 2; }
+  .sectionsix__social {
+    display: flex;
+    margin-right: 15rem; }
+    @media only screen and (max-width: 50em) {
+      .sectionsix__social {
+        margin-right: 0rem;
+        margin-top: 3rem; } }
+    .sectionsix__social--image {
+      margin: 0rem 1.5rem;
+      cursor: pointer; }

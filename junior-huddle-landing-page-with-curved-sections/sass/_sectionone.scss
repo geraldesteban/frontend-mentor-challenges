@@ -1,0 +1,67 @@
+.sectionone {
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    padding: 10rem;
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 7rem;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-mediumone) {
+            width: 90rem;
+            margin: 0rem auto;
+        }
+
+        @media only screen and (max-width: $bp-mediumfour) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__description {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3.5rem;
+        margin: 0rem auto;
+        width: 100rem;
+        margin-bottom: 7rem;
+
+        @media only screen and (max-width: $bp-mediumone) {
+            width: 90rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media only screen and (max-width: $bp-mediumfour) {
+            font-size: 5rem;
+            width: 100rem;
+            margin-bottom: 13rem;
+        }
+    }
+
+    &__link {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 3rem 18rem;
+        text-decoration: none;
+        background: hsl(322, 100%, 66%);
+        border-radius: 5rem;
+
+        @media only screen and (max-width: $bp-mediumone) {
+            padding: 2rem 10rem;
+        }
+
+        @media only screen and (max-width: $bp-mediumfour) {
+            font-size: 4rem;
+            border-radius: 6rem;
+            padding: 3rem 14rem;
+        }
+
+        &:hover {
+            color: hsl(322, 100%, 66%);
+            border: 2px solid hsl(322, 100%, 66%);
+            background: none;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.sectiontwo {
+    margin-bottom: 15rem;
+    &__text {
+        font-family: 'Bai Jamjuree', sans-serif;
+        text-align: center;
+
+        &--title {
+            font-size: 5.5rem;
+            color: hsl(210, 10%, 33%);
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-left: auto;
+                margin-right: auto;
+                width: 55rem;
+            }
+        }
+
+        &--description {
+            color: hsl(201, 11%, 66%);
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 1.5;
+            width: 95rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 48rem;
+            }
+        }
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-wrap: wrap;
+        }
+        
+
+        &--image {
+            margin-right: 4.5rem;
+            width: 80rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 50rem;
+                margin-right: 0rem;
+                margin-bottom: 10rem;
+            }
+        }
+
+        &--center {
+            margin-left: 4.5rem;
+
+            &--text {
+                font-family: 'Bai Jamjuree', sans-serif;
+                line-height: 1.5;
+
+                @media only screen and (max-width: $bp-medium) {
+                    text-align: center;
+                }
+
+                &--title {
+                    color: hsl(210, 10%, 33%);
+                    font-size: 2.3rem;
+                }
+
+                &--description {
+                    color: hsl(201, 11%, 66%);
+                    font-size: 2rem;
+                    width: 44rem;
+                    margin-bottom: 8rem;
+
+                    @media only screen and (max-width: $bp-medium) {
+                        width: 38rem;
+                    }
+                }
+            }
+        }
+    }
+}

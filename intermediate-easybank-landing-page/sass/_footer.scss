@@ -1,0 +1,109 @@
+.footer {
+  background: hsl(233, 26%, 24%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+
+  @media only screen and (max-width: $bp-mobile) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0rem;
+  }
+
+  &__one {
+  }
+
+  &__two {
+    @media only screen and (max-width: $bp-mobile) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__three {
+    @media only screen and (max-width: $bp-mobile) {
+      margin-bottom: 5rem;
+    }
+  }
+  &__four {
+  }
+
+  &__socmed {
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin: 3rem 0rem;
+      margin-left: 2rem;
+    }
+  }
+
+  &__med {
+    margin-right: 2rem;
+  }
+
+  &__li {
+    list-style: none;
+
+    @media only screen and (max-width: $bp-mobile) {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
+  }
+
+  &__btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+
+    padding: 2rem 5rem;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(233, 8%, 62%);
+    font-size: 1.5rem;
+    position: relative;
+    right: 3rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      right: 0.5rem;
+    }
+  }
+
+  &__img {
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}

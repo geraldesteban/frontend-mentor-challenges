@@ -1,0 +1,42 @@
+.vehicle__btn {
+    font-size: 15px;
+    font-weight: 700;
+
+    padding: 15px 40px;
+
+    border: solid 2px transparent;
+    border-radius: 100px;
+
+    outline: none;
+    transition: all .5s;
+
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+
+    // BUTTON COLOR
+    &-1 {
+        color: #E28625;
+    }
+
+    &-2 {
+        color: #006971;
+    }
+
+    &-3 {
+        color: #004140;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        bottom: 30px;
+    }
+
+    &:active {
+        color: #fff;
+        background-color: transparent;
+
+        border: solid 2px #fff;
+
+        cursor: pointer;
+    }
+}

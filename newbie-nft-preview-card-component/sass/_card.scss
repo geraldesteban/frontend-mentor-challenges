@@ -1,0 +1,132 @@
+.card {
+    background: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    
+    &__image {
+        background: url(/images/image-equilibrium.jpg) center no-repeat;
+        background-size: 35rem;
+        height: 35rem;
+        border-radius: 1rem;
+        position: relative;
+        margin-bottom: 2rem;
+        cursor: pointer;
+
+        &:active {
+            background: linear-gradient(90deg, rgba(0,255,255, 0.5) 0%, rgba(0,255,255, 0.5) 35%, rgba(0,212,255,1) 100%), url(/images/image-equilibrium.jpg) center;
+            background-size: 35rem;
+        }
+
+        &--view {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            padding: 15rem;
+            border-radius: 1rem;
+            opacity: 0;
+            cursor: pointer;
+
+            &:active {
+                opacity: 1;
+            }        
+        }
+    }
+
+    &__text {
+         
+        &--title {
+            width: 16rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.9rem;
+            color: hsl(0, 0%, 100%);
+            margin-bottom: 2rem;
+            cursor: pointer;
+
+            &:active {
+                color: hsl(178, 100%, 50%);
+            }
+        }
+
+        &--description {
+            width: 35rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: hsl(215, 32%, 27%);
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        &--eth {
+            display: flex;
+            align-items: center;
+
+            &--text {
+                font-family: 'Outfit', sans-serif;
+                font-weight: 600;
+                font-size: 1.7rem;
+                margin-left: 0.5rem;
+                color: hsl(178, 100%, 50%);
+            }
+        }
+
+        &--days {
+            display: flex; 
+            align-items: center;
+
+            &--text {
+                font-family: 'Outfit', sans-serif;
+                font-weight: 600;
+                font-size: 1.7rem;
+                margin-left: 0.5rem;
+                color: hsl(215, 32%, 27%);
+            }
+        }
+    }
+
+    &__line {
+        border: none;
+        border-top: 0.2rem solid hsl(215, 32%, 27%);
+        margin-bottom: 2rem;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+
+        &--image {
+            border: white 2px solid;
+            border-radius: 50%;
+            width: 8rem;
+        }
+
+        &--text {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.7rem;
+            color: hsl(215, 32%, 27%);
+            margin-left: 1rem;
+
+            & span {
+                color: hsl(0, 0%, 100%);
+                cursor: pointer;
+
+                &:active {
+                    color: hsl(178, 100%, 50%);
+                }
+            }
+        }
+    }
+}

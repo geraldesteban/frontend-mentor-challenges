@@ -1,0 +1,178 @@
+.footer {
+    background: url(/images/bg-section-top-desktop-one.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 35rem 10rem 10rem;
+    display: flex;
+    justify-content: space-around;
+
+    @media only screen and (max-width: $bp-mediumone) {
+        justify-content: flex-start;
+        flex-wrap: wrap-reverse;
+        padding: 80rem 10rem 15rem 10rem;
+    }
+
+    @media only screen and (max-width: $bp-mediumfour) {
+        padding: 120rem 10rem 15rem 10rem;
+    }
+
+    &__one {
+
+        &--img {
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                width: 40rem;
+                margin-top: 20rem;
+            }
+        }
+
+        &--text {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 50rem;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                font-size: 4rem;
+                width: 80rem;
+                margin-bottom: 10rem;
+            }
+        }
+
+        &--flex {
+            display: flex;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                margin-bottom: 5rem;
+            }
+          
+            &--text {
+                color: white;
+                font-size: 2.5rem;
+                margin-left: 2rem;
+                margin-bottom: 1rem;
+
+                @media only screen and (max-width: $bp-mediumfour) {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+
+        &--link {
+            color: white;
+            text-decoration: none;
+            margin-left: 3rem;
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                margin-left: 5rem;
+            }
+
+            &:nth-child(1) {
+                margin-left: 0rem;
+            }
+
+            & i {
+                font-size: 4rem;
+
+                @media only screen and (max-width: $bp-mediumfour) {
+                    margin-top: 5rem;
+                    font-size: 10rem;
+                }
+            }
+        }
+    }
+
+    &__two {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+
+        &--title {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                font-size: 5rem;
+            }
+        }
+
+        &--description {
+            font-size: 2.5rem;
+            width: 55rem;
+            margin-bottom: 4rem;
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                font-size: 4rem;
+                width: 80rem;
+            }
+        }
+
+        &--flex {
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-mediumone) {
+                align-items:flex-start;
+                flex-direction: column;
+            }
+        }
+
+        &--input {
+            padding: 1.5rem 10rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: none;
+
+            @media only screen and (max-width: $bp-mediumone) {
+                margin-bottom: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                padding: 2rem 10rem;
+                border-radius: 1rem;
+                margin-bottom: 4rem;
+            }
+        }
+
+        &--link {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-decoration: none;
+            background: hsl(322, 100%, 66%);
+            padding: 1.2rem 6rem;
+            border-radius: 0.5rem;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-left: 3rem;
+            border: 2px solid hsl(322, 100%, 66%);
+
+            @media only screen and (max-width: $bp-mediumone) {
+                margin-left: 0rem;
+                margin-right: 8.5rem;
+                align-self: flex-end;
+            }
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                padding: 2rem 10rem;
+                font-size: 5rem;
+                border-radius: 1rem;
+                margin-left: 27rem;
+            }
+
+            &:hover {
+                color: hsl(322, 100%, 66%);
+                background: none;
+                border: 2px solid hsl(322, 100%, 66%);
+            }
+        }
+    }
+}

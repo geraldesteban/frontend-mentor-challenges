@@ -1,0 +1,49 @@
+// RESPONSIVE BREAKPOINTS
+$bp-tablet: 62.5em; // 1000px
+$bp-desktop: 120em; // 1920px
+$bp-mobile: 37.5em; // 600px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16 = 62.5% -> 1rem = 10px
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: 1880px) {
+    font-size: 60%;
+  }
+
+  @media only screen and (max-width: 1805px) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: 1670px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 1520px) {
+    font-size: 45%;
+  }
+  @media only screen and (max-width: 1370px) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  background-color: #f2ebe3;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}

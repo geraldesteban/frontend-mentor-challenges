@@ -1,0 +1,88 @@
+.sectionfive {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 0rem 15rem 0rem;
+    &__text {
+        font-family: 'Bai Jamjuree', sans-serif;
+        text-align: center;
+
+        &--title {
+            font-size: 5.5rem;
+            color: hsl(210, 10%, 33%);
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-left: auto;
+                margin-right: auto;
+                width: 60rem;
+            }
+        }
+
+        &--description {
+            color: hsl(201, 11%, 66%);
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 1.5;
+            width: 90rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 45rem;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+
+        &--1 {
+            background: none;
+            border: solid 0.3rem hsl(171, 66%, 44%);
+            border-radius: 5rem;
+            padding: 2.5rem 5.5rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: hsl(171, 66%, 44%);
+            cursor: pointer;
+            margin-right: 1rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-right: 0rem;
+            }
+
+            &:hover {
+                background: hsl(171, 66%, 44%);
+                color: white;
+            }
+        }
+
+        &--2 {
+            background: none;
+            border: solid 0.3rem hsl(233, 100%, 69%);
+            border-radius: 5rem;
+            padding: 2.5rem 5.5rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: hsl(233, 100%, 69%);
+            cursor: pointer;
+            margin-left: 1rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-left: 0rem;
+            }
+
+            &:hover {
+                background: hsl(233, 100%, 69%);
+                color: white;
+            }
+        }
+    }
+}

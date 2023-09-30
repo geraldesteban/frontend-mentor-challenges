@@ -1,0 +1,37 @@
+.sectionthree {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem 0rem;
+
+    @media only screen and (max-width: $bp-mediumfour) {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-family: Arial, Helvetica, sans-serif;
+
+        @media only screen and (max-width: $bp-mediumfour) {
+            margin-bottom: 20rem;
+        }
+
+        &--title {
+            font-size: 10rem;
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                font-size: 20rem;
+            }
+        }
+
+        &--description {
+            font-size: 2.5rem;
+            color: gray;
+            text-align: center;
+
+            @media only screen and (max-width: $bp-mediumfour) {
+                font-size: 5rem;
+            }
+        }
+    }
+}

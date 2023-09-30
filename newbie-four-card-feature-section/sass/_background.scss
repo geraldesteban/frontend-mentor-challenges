@@ -1,0 +1,30 @@
+.center {
+    display: block;
+    margin: 50px auto;
+
+    &__width {
+        width: 520px;
+
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title {
+        color: #4D4F62;
+        font-size: 36px;
+
+        & p:nth-child(2) {
+            font-weight: 600;
+        }
+    }
+
+    &__description {
+        color: #4D4F62;
+        font-size: 15px;
+        background-color: blue;
+    }
+}

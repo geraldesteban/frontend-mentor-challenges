@@ -1,0 +1,108 @@
+.card {
+    background: hsl(244, 38%, 16%);
+    border-radius: 1rem;
+    width: 115rem;
+    height: 44.7rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: $bp-large) {
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        flex-wrap: wrap-reverse;
+        width: 55rem;
+        height: 90rem;
+    }
+
+    &__1 {
+        padding: 8rem;
+
+        &--title {
+            width: 45rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 4rem;
+            color: hsl(0, 0%, 100%);
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: $bp-large) {
+                text-align: center;
+                width: 40rem;
+            }
+
+            & span {
+                color: hsl(277, 64%, 61%);
+            }
+        }
+
+        &--description {
+            width: 35rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            color: hsla(0, 0%, 100%, 0.75);
+            margin-bottom: 4rem;
+
+            @media only screen and (max-width: $bp-large) {
+                text-align: center;
+                width: 42rem;
+                font-size: 2.4rem;
+            }
+        }
+       
+
+        &--column {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Lexend Deca', sans-serif;
+            margin-right: 10rem;
+            color: white;
+            line-height: 1.5;
+            font-weight: 600;
+
+            @media only screen and (max-width: $bp-large) {
+                display: block;
+                justify-content: center;
+                text-align: center;
+                margin-right: 0rem;
+            }
+
+            & h2 {
+                font-size: 2rem;
+
+                @media only screen and (max-width: $bp-large) {
+                    font-size: 3.5rem;
+                }
+            }
+            & p {
+                font-size: 1rem;
+                color: hsla(0, 0%, 100%, 0.75);
+                letter-spacing: 1.5;
+                margin-bottom: 2rem;
+
+                @media only screen and (max-width: $bp-large) {
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+
+    &__2 img{
+        width: 55rem;
+        height: 44.7rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        @media only screen and (max-width: $bp-large) {
+            border-bottom-right-radius: 0rem;
+            border-top-left-radius: 1rem;
+
+        }
+    }
+}

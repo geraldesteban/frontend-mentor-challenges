@@ -1,0 +1,79 @@
+.profile {
+    background-image: url(/images/Background_desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    @media only screen and (max-width: $bp-small) {
+        background-image: url(/images/Background_phone.png);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    
+    @media only screen and (max-width: $bp-smallest) {
+        width: 300px;
+    }
+}
+
+.circle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &__profile {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .10);
+        backface-visibility: hidden;
+    }
+
+    &__card {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__picture {
+        display: flex;
+        justify-content: center;
+        & img {
+            border: 5px solid #fff;
+            border-radius: 50%;
+        }
+    }
+}
+
+.rows {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    border-top: 1px solid #979797;
+}
+
+.row {
+    padding-top: 20;
+    line-height: 1.6;
+
+    &__number {
+        color: #2E3349;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 18px;
+    }
+
+    &__follow {
+        color: #6B7082;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 10px;
+    }
+}
+.test {
+    position: relative;
+    top: -50;
+}

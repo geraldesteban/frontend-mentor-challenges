@@ -1,0 +1,31 @@
+.card {
+  background: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  font-family: "Outfit", sans-serif;
+  width: 61rem;
+
+  &__image {
+    border-radius: 2rem;
+    height: 55rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    color: hsl(218, 44%, 22%);
+    text-align: center;
+    padding: 1.5rem 2rem;
+  }
+
+  &__description {
+    font-size: 3rem;
+    color: hsl(220, 15%, 55%);
+    text-align: center;
+    padding: 1.5rem 2rem;
+  }
+}
