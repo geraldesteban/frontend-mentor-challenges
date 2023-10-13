@@ -14,10 +14,10 @@
   </head>
   <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
   <body>
-    <div class="container bg-black">
-      <nav class="navbar">
-        <img src="./images/logo.svg" alt="" class="navbar-img" />
-        <ul class="navbar-ul">
+    <div class="wrapper">
+      <nav class="navbar flex justify-around items-center bg-black">
+        <img src="../images/logo.svg" alt="" class="navbar-img" />
+        <ul class="navbar-ul flex">
           <li class="navbar-li"><a href="#" class="navbar-link">Pricing</a></li>
           <li class="navbar-li"><a href="#" class="navbar-link">Product</a></li>
           <li class="navbar-li">
@@ -28,7 +28,11 @@
             <a href="#" class="navbar-link">Community</a>
           </li>
         </ul>
-        <button class="navbar-btn">Get Started</button>
+        <button
+          class="navbar-btn text-white text-xl bg-orange-600 px-8 py-2 rounded-full"
+        >
+          Get Started
+        </button>
       </nav>
     </div>
   </body>
