@@ -9,27 +9,49 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="output.css" />
     <title>Manage landing page</title>
   </head>
   <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
   <body>
     <div class="wrapper">
-      <nav class="navbar flex justify-around items-center bg-black">
+      <nav
+        class="navbar flex justify-around items-center py-14 font-be-vietnam-pro font-medium"
+      >
         <img src="../images/logo.svg" alt="" class="navbar-img" />
         <ul class="navbar-ul flex">
-          <li class="navbar-li"><a href="#" class="navbar-link">Pricing</a></li>
-          <li class="navbar-li"><a href="#" class="navbar-link">Product</a></li>
-          <li class="navbar-li">
-            <a href="#" class="navbar-link">About Us</a>
+          <li class="navbar-li mr-6">
+            <a href="#" class="navbar-link text-very-dark-blue hover:opacity-50"
+              >Pricing</a
+            >
           </li>
-          <li class="navbar-li"><a href="#" class="navbar-link">Careers</a></li>
-          <li class="navbar-li">
-            <a href="#" class="navbar-link">Community</a>
+          <li class="navbar-li mx-6">
+            <a href="#" class="navbar-link text-very-dark-blue hover:opacity-50"
+              >Product</a
+            >
+          </li>
+          <li class="navbar-li mx-6">
+            <a href="#" class="navbar-link text-very-dark-blue hover:opacity-50"
+              >About Us</a
+            >
+          </li>
+          <li class="navbar-li mx-6">
+            <a href="#" class="navbar-link text-very-dark-blue hover:opacity-50"
+              >Careers</a
+            >
+          </li>
+          <li class="navbar-li ml-6">
+            <a href="#" class="navbar-link text-very-dark-blue hover:opacity-50"
+              >Community</a
+            >
           </li>
         </ul>
         <button
-          class="navbar-btn text-white text-xl bg-orange-600 px-8 py-2 rounded-full"
+          class="navbar-btn text-white text-base bg-orange-600 py-4 px-12 rounded-full hover:opacity-50"
         >
           Get Started
         </button>
