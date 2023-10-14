@@ -4,7 +4,7 @@
   "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "tailwindcss -i input.css -o ./build/dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",

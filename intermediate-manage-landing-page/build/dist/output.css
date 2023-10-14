@@ -539,16 +539,16 @@ video {
   margin-right: 1.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
 }
 
 .mr-6 {
   margin-right: 1.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .mt-10 {
@@ -581,14 +581,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+.bg-transparent {
+  background-color: transparent;
 }
 
-.bg-emerald-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+.bg-none {
+  background-image: none;
 }
 
 .px-12 {
@@ -642,6 +640,7 @@ body {
   background: url(../images/bg-tablet-pattern.svg) no-repeat;
   background-size: 60rem;
   background-position: 125% 30%;
+  background: red;
 }
 
 .hover\:opacity-50:hover {
@@ -654,12 +653,20 @@ body {
     margin-right: 0px;
   }
 
+  .laptop\:ml-0 {
+    margin-left: 0px;
+  }
+
   .laptop\:mr-0 {
     margin-right: 0px;
   }
 
-  .laptop\:ml-0 {
-    margin-left: 0px;
+  .laptop\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .laptop\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .laptop\:block {
@@ -670,7 +677,12 @@ body {
     display: none;
   }
 
-  .laptop\:flex-row {
-    flex-direction: row;
+  .laptop\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .laptop\:text-center {
+    text-align: center;
   }
 }
