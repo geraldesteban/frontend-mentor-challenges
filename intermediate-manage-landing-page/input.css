@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-  background: url(../images/bg-tablet-pattern.svg) no-repeat;
+  background: url(/frontend-mentor-challenges/intermediate-manage-landing-page/dist/images/bg-tablet-pattern.svg)
+    no-repeat;
   background-size: 60rem;
   background-position: 125% 30%;
-  background: red;
 }
