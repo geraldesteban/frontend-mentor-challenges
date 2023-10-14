@@ -13,6 +13,11 @@ module.exports = {
         "be-vietnam-pro": ["Be Vietnam Pro", "sans-serif"],
       },
     },
+    screens: {
+      mobile: { max: "640px" },
+      tablet: { max: "1025px" },
+      laptop: { max: "1280px" },
+    },
   },
   plugins: [],
 };

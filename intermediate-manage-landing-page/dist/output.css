@@ -547,6 +547,14 @@ video {
   margin-right: 1.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -555,8 +563,8 @@ video {
   align-items: center;
 }
 
-.justify-around {
-  justify-content: space-around;
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded-full {
@@ -568,9 +576,29 @@ video {
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .py-14 {
@@ -581,6 +609,10 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-be-vietnam-pro {
@@ -614,4 +646,31 @@ body {
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 1280px) {
+  .laptop\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .laptop\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .laptop\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .laptop\:block {
+    display: block;
+  }
+
+  .laptop\:hidden {
+    display: none;
+  }
+
+  .laptop\:flex-row {
+    flex-direction: row;
+  }
 }
