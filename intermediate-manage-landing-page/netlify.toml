@@ -1,3 +1,3 @@
 [build]
   command = "npm run dev" 
-  publish = "manage-landing-page" 
+  publish = "intermediate-manage-landing-page" 
