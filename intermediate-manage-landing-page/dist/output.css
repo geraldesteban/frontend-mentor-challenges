@@ -748,10 +748,6 @@ video {
     padding-bottom: 7rem;
   }
 
-  .laptop\:pt-0 {
-    padding-top: 0px;
-  }
-
   .laptop\:text-center {
     text-align: center;
   }
@@ -768,6 +764,23 @@ video {
 }
 
 @media (max-width: 1650px) {
+  .desktop\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .desktop\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
+  .desktop\:mr-3 {
+    margin-right: 0.75rem;
+  }
+
+  .desktop\:pt-16 {
+    padding-top: 4rem;
+  }
+
   .desktop\:text-5xl {
     font-size: 3rem;
     line-height: 1;
