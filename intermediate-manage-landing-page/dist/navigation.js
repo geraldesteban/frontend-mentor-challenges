@@ -5,14 +5,14 @@ const iconNavClose = document.querySelector(".navbar-close");
 
 // Navigation bar mobile
 const openNav = function () {
-  navUl.classList.remove("laptop:hidden");
-  iconNavOpen.classList.remove("laptop:block");
+  navUl.classList.remove("lg:hidden");
+  iconNavOpen.classList.remove("lg:block");
   iconNavClose.classList.remove("hidden");
 };
 
 const closeNav = function () {
-  navUl.classList.add("laptop:hidden");
-  iconNavOpen.classList.add("laptop:block");
+  navUl.classList.add("lg:hidden");
+  iconNavOpen.classList.add("lg:block");
   iconNavClose.classList.add("hidden");
 };
 

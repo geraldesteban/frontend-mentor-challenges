@@ -31,12 +31,12 @@
     <div class="wrapper">
       <!-- Navigation Bar -->
       <nav
-        class="navbar flex laptop:relative justify-between items-center py-14 px-52 font-be-vietnam-pro font-medium laptop:block"
+        class="navbar flex lg:relative justify-between items-center py-14 px-52 font-be-vietnam-pro font-medium lg:block twoXl:px-16"
       >
         <div class="navbar-img flex justify-between items-center">
           <img src="./images/logo.svg" alt="" class="navbar-img" />
           <i
-            class="fa-solid fa-bars navbar-open text-dark-blue hidden cursor-pointer laptop:block"
+            class="fa-solid fa-bars navbar-open text-dark-blue hidden cursor-pointer lg:block"
             style="font-size: 40px"
           ></i>
           <i
@@ -45,47 +45,47 @@
           ></i>
         </div>
         <ul
-          class="navbar-ul laptopMin:flex laptop:hidden laptop:bg-white laptop:text-center laptop:my-10 laptop:py-10 laptop:rounded-md laptop:font-bold laptop:shadow-md laptop:absolute laptop:right-52 laptop:left-52"
+          class="navbar-ul laptopMin:flex lg:hidden lg:bg-white lg:text-center lg:my-10 lg:py-10 lg:rounded-md lg:font-bold lg:shadow-md lg:absolute lg:right-52 lg:left-52"
         >
-          <li class="navbar-li mr-6 desktop:mr-3 laptop:mr-0 laptop:mb-5">
-            <a href="#" class="navbar-link text-dark-blue hover:opacity-50"
-              >Pricing</a
-            >
+          <li class="navbar-li mr-6 xl:mr-3 lg:mr-0 lg:mb-5">
+            <a href="#" class="navbar-link text-dark-blue hover:opacity-50">
+              Price
+            </a>
           </li>
-          <li class="navbar-li mx-6 desktop:mx-3 laptop:mx-0 laptop:mb-5">
+          <li class="navbar-li mx-6 xl:mx-3 lg:mx-0 lg:mb-5">
             <a href="#" class="navbar-link text-dark-blue hover:opacity-50"
               >Product</a
             >
           </li>
-          <li class="navbar-li mx-6 desktop:mx-3 laptop:mx-0 laptop:mb-5">
+          <li class="navbar-li mx-6 xl:mx-3 lg:mx-0 lg:mb-5">
             <a href="#" class="navbar-link text-dark-blue hover:opacity-50"
               >About Us</a
             >
           </li>
-          <li class="navbar-li mx-6 desktop:mx-3 laptop:mx-0 laptop:mb-5">
+          <li class="navbar-li mx-6 xl:mx-3 lg:mx-0 lg:mb-5">
             <a href="#" class="navbar-link text-dark-blue hover:opacity-50"
               >Careers</a
             >
           </li>
-          <li class="navbar-li ml-6 desktop:ml-3 laptop:ml-0">
+          <li class="navbar-li ml-6 xl:ml-3 lg:ml-0">
             <a href="#" class="navbar-link text-dark-blue hover:opacity-50"
               >Community</a
             >
           </li>
         </ul>
         <button
-          class="navbar-btn text-white text-base bg-orange-600 py-4 px-12 rounded-full laptop:hidden hover:opacity-50"
+          class="navbar-btn text-white text-base bg-orange-600 py-4 px-12 rounded-full lg:hidden hover:opacity-50"
         >
           Get Started
         </button>
       </nav>
       <!-- Main Page -->
       <main
-        class="main flex justify-between items-center pt-28 px-52 laptop:flex-wrap-reverse laptop:justify-center desktop:pt-8 laptop:pt-0 laptop:pb-28"
+        class="main flex justify-between items-center pt-16 px-52 lg:flex-wrap-reverse lg:justify-center twoXl:pt-8 lg:pt-0 lg:pb-28 twoXl:px-16 lg:text-center"
       >
         <div class="main-left">
           <h2
-            class="main-title text-7xl font-bold text-dark-blue mb-10 desktop:text-5xl"
+            class="main-title text-7xl font-bold text-dark-blue mb-10 twoXl:text-5xl"
           >
             Bring everyone together to build better products.
           </h2>
@@ -94,7 +94,7 @@
             while keeping the larger team goals in view.
           </p>
           <button
-            class="navbar-btn text-white text-base bg-orange-600 py-4 px-12 rounded-full hover:opacity-50"
+            class="navbar-btn text-white text-base font-bold bg-orange-600 py-4 px-12 rounded-full hover:opacity-50"
           >
             Get Started
           </button>
@@ -102,9 +102,11 @@
         <img
           src="./images/illustration-intro.svg"
           alt="illustration image"
-          class="main-img w-1/2 laptop:w-5/6"
+          class="main-img w-1/2"
         />
       </main>
+      <!-- About page -->
+      <div class="about"></div>
     </div>
     <script src="navigation.js"></script>
   </body>
