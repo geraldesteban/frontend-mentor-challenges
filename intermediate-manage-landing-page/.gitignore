@@ -1,9 +1,10 @@
 *.sketch
 *.xd
 *.fig
-.DS_Store
+../.DS_Store
 node_modules
 style-guide.md
 design
 package-lock.json
 README-template.md
+.DS_Store

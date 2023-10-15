@@ -17,6 +17,7 @@ module.exports = {
       mobile: { max: "640px" },
       tablet: { max: "1025px" },
       laptop: { max: "1280px" },
+      laptopMin: { min: "1281px" },
     },
   },
   plugins: [],
