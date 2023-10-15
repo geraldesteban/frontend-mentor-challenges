@@ -8,6 +8,8 @@ module.exports = {
         "very-dark-blue": "hsl(233, 12%, 13%)",
         "very-pale-red": "hsl(13, 100%, 96%)",
         "very-light-gray": "hsl(0, 0%, 98%)",
+        "bright-red": "hsl(12, 88%, 59%)",
+        "dark-blue": "hsl(228, 39%, 23%)",
       },
       fontFamily: {
         "be-vietnam-pro": ["Be Vietnam Pro", "sans-serif"],
@@ -17,6 +19,7 @@ module.exports = {
       mobile: { max: "640px" },
       tablet: { max: "1025px" },
       laptop: { max: "1280px" },
+      desktop: { max: "1650px" },
       laptopMin: { min: "1281px" },
     },
   },
