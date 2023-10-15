@@ -588,6 +588,11 @@ video {
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -748,6 +753,10 @@ video {
     padding-bottom: 7rem;
   }
 
+  .laptop\:pt-0 {
+    padding-top: 0px;
+  }
+
   .laptop\:text-center {
     text-align: center;
   }
@@ -777,8 +786,16 @@ video {
     margin-right: 0.75rem;
   }
 
+  .desktop\:pt-0 {
+    padding-top: 0px;
+  }
+
   .desktop\:pt-16 {
     padding-top: 4rem;
+  }
+
+  .desktop\:pt-8 {
+    padding-top: 2rem;
   }
 
   .desktop\:text-5xl {
