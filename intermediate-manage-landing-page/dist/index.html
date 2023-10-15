@@ -31,21 +31,21 @@
     <div class="wrapper">
       <!-- Navigation Bar -->
       <nav
-        class="navbar flex justify-between items-center py-14 px-52 font-be-vietnam-pro font-medium laptop:block"
+        class="navbar flex laptop:relative justify-between items-center py-14 px-52 font-be-vietnam-pro font-medium laptop:block"
       >
         <div class="navbar-img flex justify-between items-center">
           <img src="./images/logo.svg" alt="" class="navbar-img" />
           <i
-            class="fa-solid fa-bars navbar-open hidden cursor-pointer laptop:block"
+            class="fa-solid fa-bars navbar-open text-dark-blue hidden cursor-pointer laptop:block"
             style="font-size: 40px"
           ></i>
           <i
-            class="fa-solid fa-x navbar-close hidden cursor-pointer laptopMin:hidden"
+            class="fa-solid fa-x navbar-close text-dark-blue hidden cursor-pointer laptopMin:hidden"
             style="font-size: 40px"
           ></i>
         </div>
         <ul
-          class="navbar-ul laptopMin:flex laptop:hidden laptop:bg-white laptop:text-center laptop:my-10 laptop:py-10 laptop:rounded-md laptop:font-bold laptop:shadow-md"
+          class="navbar-ul laptopMin:flex laptop:hidden laptop:bg-white laptop:text-center laptop:my-10 laptop:py-10 laptop:rounded-md laptop:font-bold laptop:shadow-md laptop:absolute laptop:right-52 laptop:left-52"
         >
           <li class="navbar-li mr-6 desktop:mr-3 laptop:mr-0 laptop:mb-5">
             <a href="#" class="navbar-link text-dark-blue hover:opacity-50"
@@ -106,6 +106,6 @@
         />
       </main>
     </div>
-    <script src="script.js"></script>
+    <script src="navigation.js"></script>
   </body>
 </html>

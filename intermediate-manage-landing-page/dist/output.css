@@ -588,11 +588,6 @@ video {
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -693,6 +688,22 @@ video {
 }
 
 @media (max-width: 1280px) {
+  .laptop\:absolute {
+    position: absolute;
+  }
+
+  .laptop\:relative {
+    position: relative;
+  }
+
+  .laptop\:left-52 {
+    left: 13rem;
+  }
+
+  .laptop\:right-52 {
+    right: 13rem;
+  }
+
   .laptop\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -784,14 +795,6 @@ video {
 
   .desktop\:mr-3 {
     margin-right: 0.75rem;
-  }
-
-  .desktop\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .desktop\:pt-16 {
-    padding-top: 4rem;
   }
 
   .desktop\:pt-8 {
