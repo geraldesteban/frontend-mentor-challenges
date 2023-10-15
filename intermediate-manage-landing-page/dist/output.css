@@ -583,6 +583,11 @@ video {
   border-radius: 9999px;
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
@@ -749,10 +754,6 @@ video {
     padding-bottom: 7rem;
   }
 
-  .lg\:pt-0 {
-    padding-top: 0px;
-  }
-
   .lg\:text-center {
     text-align: center;
   }
@@ -789,8 +790,13 @@ video {
     padding-right: 4rem;
   }
 
-  .twoXl\:pt-8 {
-    padding-top: 2rem;
+  .twoXl\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .twoXl\:pt-0 {
+    padding-top: 0px;
   }
 
   .twoXl\:text-5xl {
