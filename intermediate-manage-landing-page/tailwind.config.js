@@ -23,6 +23,14 @@ module.exports = {
       twoXl: { max: "1660px" },
       laptopMin: { min: "964px" },
     },
+    boxShadow: {
+      custom: "0px 25px 17px -14px rgba(234, 88, 12, 0.51)",
+    },
+    width: {
+      "36.3rem": "36.3rem",
+      "26.1rem": "26.1rem",
+      "24rem": "24rem",
+    },
   },
   plugins: [],
 };
